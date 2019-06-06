@@ -30,5 +30,4 @@
     groups: postgres
     append: yes
     password: "{{ postgres_password.stdout }}"
-- name: Get postgres password
-   debug: msg=" New postgres password is {{ postgres_password.stdout }}"
+- debug: msg=" New postgres password is {{ postgres_password.stdout }}"
